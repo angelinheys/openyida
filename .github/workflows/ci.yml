@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install --ignore-scripts
+      run: npm install
 
     - name: Validate project structure
       run: node scripts/validate-structure.js
@@ -70,7 +70,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install --ignore-scripts
+      run: npm install
 
     - name: Run tests
       run: npm test
